@@ -87,7 +87,7 @@ st.markdown("""
 
 try:
     # 데이터 로드
-    df = load_data(r"C:\Users\USER\Desktop\bootcamp\6주차\과제\sunspots.csv")
+    df = load_data(r"data/sunspots.csv")
 
     # 필터링된 데이터 - 전체 데이터 사용
     filtered_df = df
@@ -103,4 +103,5 @@ try:
 except Exception as e:
     st.error(f"오류가 발생했습니다: {e}")
     st.info("데이터 파일의 구조를 확인해주df세요. 'data/sunspots.csv' 파일이 존재하고 'YEAR'와 'SUNACTIVITY' 컬럼이 있어야 합니다.")
+
 
